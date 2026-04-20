@@ -28,7 +28,7 @@ function Vision() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <PageBanner title="Our Vision" subtitle="Making data-driven solutions accessible to all." />
+      <PageBanner title="Our Vision" subtitle="Digitizing township businesses to compete, grow and create jobs." />
 
       <section className="py-20">
         <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
