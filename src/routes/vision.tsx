@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PageBanner } from "@/components/PageBanner";
@@ -83,6 +83,24 @@ function Vision() {
           <p className="mt-6 text-muted-foreground leading-relaxed">
             At MOZK Solutions, our team is led by experienced professionals with years of expertise in data analysis and web development. Our leadership team is dedicated to providing exceptional services and building strong relationships with clients — delivering solutions that exceed expectations.
           </p>
+        </div>
+      </section>
+
+      <section className="py-20 bg-[var(--navy-deep)]">
+        <div className="container mx-auto px-6 text-center max-w-3xl">
+          <span className="text-xs uppercase tracking-[0.3em] text-primary">Innovation unit</span>
+          <h2 className="mt-4 text-4xl font-bold text-foreground">
+            Introducing <span className="text-primary">KasiConnect</span>
+          </h2>
+          <p className="mt-6 text-muted-foreground leading-relaxed">
+            KasiConnect is our digital innovation unit focused on the township economy. Its first product, Kota AI, is a live demand forecasting and reorder API tailored for small-to-medium fast-food restaurants in the North West province of South Africa.
+          </p>
+          <Link
+            to="/kasiconnect"
+            className="inline-block mt-8 px-7 py-3 rounded-md bg-primary text-primary-foreground font-medium hover:shadow-glow transition-smooth"
+          >
+            Discover KasiConnect
+          </Link>
         </div>
       </section>
 
