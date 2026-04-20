@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PageBanner } from "@/components/PageBanner";
-import { BrainCircuit, Bot, Boxes, Store, Check } from "lucide-react";
+import { BrainCircuit, Bot, Boxes, Store, Database, BarChart3, Check } from "lucide-react";
 
 export const Route = createFileRoute("/solutions")({
   head: () => ({
@@ -41,6 +41,18 @@ const solutions = [
     title: "Software & Digitization",
     desc: "Lightweight, low-bandwidth web and mobile software that digitizes operations for spazas, fast-food shops and service SMEs in the township.",
     bullets: ["Web & mobile apps", "POS & sales tracking", "Inventory dashboards", "Supplier integrations"],
+  },
+  {
+    icon: Database,
+    title: "Data Engineering & Cloud",
+    desc: "We build and manage the databases, pipelines and cloud infrastructure that power our AI models, agents and apps — affordable, reliable and ready to scale.",
+    bullets: ["Database design", "Data pipelines", "Cloud hosting", "API integrations"],
+  },
+  {
+    icon: BarChart3,
+    title: "Analytics & Insights",
+    desc: "We turn raw sales, stock and customer data into dashboards and visualizations that help owners and managers make confident, informed decisions.",
+    bullets: ["Interactive dashboards", "Sales & stock reporting", "Customer insights", "KPI tracking"],
   },
   {
     icon: Store,
