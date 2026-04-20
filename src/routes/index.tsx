@@ -220,10 +220,11 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-overlay" />
         <div className="container relative mx-auto px-6 text-center max-w-3xl">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Accelerate Your Business <span className="text-primary">with MOZK Solutions</span>
+            Let's Digitize Your Township Business <span className="text-primary">with MOZK</span>
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
-            Don't let your data go to waste. Contact us today to schedule a consultation and learn how we can help you unlock the power of your data and drive growth for your business.
+            Whether you run a fast-food shop, a spaza or a growing SME — we'll build the AI models,
+            agents and software you need to compete, grow and create jobs in your community.
           </p>
           <Link
             to="/contact"
