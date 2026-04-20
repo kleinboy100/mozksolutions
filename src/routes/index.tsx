@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroBg from "@/assets/hero-bg.jpg";
 import banner from "@/assets/page-banner.jpg";
+import kasiHero from "@/assets/kasiconnect-hero.jpg";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Cloud, Code2, BrainCircuit, HeartHandshake, ArrowRight } from "lucide-react";
@@ -160,6 +161,7 @@ function Index() {
             >
               Explore all solutions <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
         </div>
       </section>
 
@@ -169,7 +171,7 @@ function Index() {
           <div className="relative order-2 md:order-1">
             <div className="absolute -inset-4 bg-gradient-hero rounded-2xl opacity-50 blur-xl" />
             <img
-              src="/src/assets/kasiconnect-hero.jpg"
+              src={kasiHero}
               alt="Kota AI demand forecasting in a township fast-food shop"
               className="relative rounded-2xl shadow-elegant border border-border w-full"
               width={1920}
