@@ -12,7 +12,7 @@ export const Route = createFileRoute("/vision")({
       {
         name: "description",
         content:
-          "Our mission is to make data-driven solutions accessible to all — for SMEs, businesses and the education sector.",
+          "Our mission is to digitize township businesses with AI models, agents and software — making them competitive and creating local employment.",
       },
       { property: "og:title", content: "Vision — MOZK Solutions" },
       {
