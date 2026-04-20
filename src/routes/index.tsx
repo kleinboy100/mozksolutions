@@ -4,7 +4,7 @@ import banner from "@/assets/page-banner.jpg";
 import kasiHero from "@/assets/kasiconnect-hero.jpg";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Bot, Boxes, BrainCircuit, Store, ArrowRight } from "lucide-react";
+import { Bot, Boxes, BrainCircuit, Store, Database, BarChart3, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -41,6 +41,16 @@ const services = [
     icon: Boxes,
     title: "Software & Digitization",
     desc: "Lightweight, low-bandwidth web and mobile software that digitizes operations — from sales to stock — for fast-food shops, spazas and service SMEs.",
+  },
+  {
+    icon: Database,
+    title: "Data Engineering & Cloud",
+    desc: "We design and manage the databases, pipelines and cloud infrastructure that power every model, agent and app we build.",
+  },
+  {
+    icon: BarChart3,
+    title: "Analytics & Insights",
+    desc: "Dashboards and visualizations that turn raw sales, stock and customer data into clear, actionable decisions for owners and managers.",
   },
   {
     icon: Store,
