@@ -56,7 +56,7 @@ function Solutions() {
       <Header />
       <PageBanner
         title="Our Solutions"
-        subtitle="A complete set of data and software services for businesses of every size."
+        subtitle="AI models, agents and software that digitize township businesses and create jobs."
       />
 
       <section className="py-20">
