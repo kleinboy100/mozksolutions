@@ -127,6 +127,11 @@ function Index() {
               and grounded in how informal businesses actually trade.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
+              At the heart of everything we ship is data. We build and manage the databases,
+              pipelines and cloud infrastructure that capture how each business trades, then turn
+              that data into insights, dashboards and AI-driven decisions owners can act on daily.
+            </p>
+            <p className="mt-4 text-muted-foreground leading-relaxed">
               Every solution we ship is designed to do two things — make our clients more
               competitive, and create employment in the communities they serve.
             </p>
@@ -152,11 +157,11 @@ function Index() {
             <span className="text-xs uppercase tracking-[0.3em] text-primary">What we do</span>
             <h2 className="mt-4 text-4xl md:text-5xl font-bold text-foreground">How We Digitize the Kasi Economy</h2>
             <p className="mt-6 text-muted-foreground">
-              AI models, intelligent agents and software solutions — purpose-built to make township
-              businesses competitive and to create local employment.
+              From data and cloud to AI models, agents and software — purpose-built to make
+              township businesses competitive and to create local employment.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s) => (
               <div
                 key={s.title}
