@@ -12,7 +12,7 @@ export const Route = createFileRoute("/vision")({
       {
         name: "description",
         content:
-          "Our mission is to make data-driven solutions accessible to all — for SMEs, businesses and the education sector.",
+          "Our mission is to digitize township businesses with AI models, agents and software — making them competitive and creating local employment.",
       },
       { property: "og:title", content: "Vision — MOZK Solutions" },
       {
@@ -28,7 +28,7 @@ function Vision() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <PageBanner title="Our Vision" subtitle="Making data-driven solutions accessible to all." />
+      <PageBanner title="Our Vision" subtitle="Digitizing township businesses to compete, grow and create jobs." />
 
       <section className="py-20">
         <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
@@ -36,10 +36,14 @@ function Vision() {
             <span className="text-xs uppercase tracking-[0.3em] text-primary">Mission</span>
             <h2 className="mt-4 text-4xl font-bold text-foreground">Our Mission</h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              At MOZK Solutions, we are dedicated to helping our clients build databases to extract insights that drive improvement. Our team of professionals specializes in data analysis and web development, providing affordable and reliable solutions for small to medium-sized enterprises, businesses, and the education sector.
+              MOZK Solutions exists to digitize the township economy. We build AI models,
+              intelligent agents and software solutions that give Kasi entrepreneurs the same
+              competitive tools as formal businesses — affordable, low-bandwidth and grounded in
+              the realities of how they trade.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Our mission is to showcase our services and generate leads for our clients. We aim to make data-driven solutions accessible to all. Let us help you succeed by harnessing the power of data.
+              By making informal businesses more competitive, we help them grow revenue, retain
+              profit in their communities and create sustainable local employment.
             </p>
           </div>
           <img
@@ -65,12 +69,15 @@ function Vision() {
           />
           <div>
             <span className="text-xs uppercase tracking-[0.3em] text-primary">Our story</span>
-            <h2 className="mt-4 text-4xl font-bold text-foreground">Built on Experience</h2>
+            <h2 className="mt-4 text-4xl font-bold text-foreground">Built for the Kasi Economy</h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              MOZK Solutions was founded with a vision to make data-driven solutions accessible to all. Our team of professionals has years of experience in data analysis and web development. We specialize in providing affordable and reliable solutions for small to medium-sized enterprises, businesses, and the education sector.
+              MOZK Solutions was founded to close the digital gap between township businesses and
+              the formal economy. We combine deep technical expertise — AI, software engineering
+              and data — with first-hand understanding of how informal businesses operate.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Our passion for data and technology drives us to deliver exceptional services to our clients.
+              The result: practical AI models, agents and software that move the needle on
+              competitiveness, profitability and local job creation.
             </p>
           </div>
         </div>
@@ -79,9 +86,11 @@ function Vision() {
       <section className="py-20">
         <div className="container mx-auto px-6 text-center max-w-3xl">
           <span className="text-xs uppercase tracking-[0.3em] text-primary">Leadership</span>
-          <h2 className="mt-4 text-4xl font-bold text-foreground">Experienced Leadership</h2>
+          <h2 className="mt-4 text-4xl font-bold text-foreground">Operators & Builders</h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">
-            At MOZK Solutions, our team is led by experienced professionals with years of expertise in data analysis and web development. Our leadership team is dedicated to providing exceptional services and building strong relationships with clients — delivering solutions that exceed expectations.
+            Our leadership team blends AI, software and on-the-ground experience working with
+            township SMEs. We don't just ship technology — we partner with our clients to digitize
+            their operations, grow their revenue and hire from their communities.
           </p>
         </div>
       </section>

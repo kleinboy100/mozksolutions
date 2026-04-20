@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PageBanner } from "@/components/PageBanner";
-import { Cloud, Code2, BrainCircuit, HeartHandshake, Check } from "lucide-react";
+import { BrainCircuit, Bot, Boxes, Store, Check } from "lucide-react";
 
 export const Route = createFileRoute("/solutions")({
   head: () => ({
@@ -11,12 +11,12 @@ export const Route = createFileRoute("/solutions")({
       {
         name: "description",
         content:
-          "Cloud analytics, application development, data science and customer experience services for SMEs and the education sector.",
+          "AI models, intelligent agents and software solutions that digitize township businesses, make them competitive and create local employment.",
       },
       { property: "og:title", content: "Solutions — MOZK Solutions" },
       {
         property: "og:description",
-        content: "Affordable, reliable data and software solutions tailored to your business.",
+        content: "Custom AI, agents and software built for the Kasi economy.",
       },
     ],
   }),
@@ -25,28 +25,28 @@ export const Route = createFileRoute("/solutions")({
 
 const solutions = [
   {
-    icon: Cloud,
-    title: "Cloud Analytics & Modernization",
-    desc: "Harness the power of the cloud to manage and analyze your data. We help you make sense of your data with insights and visualizations that enable informed decisions.",
-    bullets: ["Cloud migration", "Data warehousing", "Interactive dashboards", "Real-time analytics"],
-  },
-  {
-    icon: Code2,
-    title: "Application Development",
-    desc: "Our team of experienced developers builds custom applications that meet the unique needs of your business — web, mobile or desktop.",
-    bullets: ["Web applications", "Mobile apps", "Desktop software", "API integrations"],
-  },
-  {
     icon: BrainCircuit,
-    title: "Data Science & Machine Learning",
-    desc: "Gain deeper insights into your data and make informed decisions using advanced analytical techniques to identify patterns and trends.",
-    bullets: ["Predictive models", "Data mining", "ML pipelines", "Natural language processing"],
+    title: "AI Models for Township SMEs",
+    desc: "We build proprietary forecasting and decision models — like Kota AI — that learn how informal businesses actually trade and turn that into a competitive edge.",
+    bullets: ["Demand forecasting", "Reorder & stock logic", "Event & weather-aware models", "Continuous retraining"],
   },
   {
-    icon: HeartHandshake,
-    title: "Full Customer Experience Service",
-    desc: "Improve your customer experience — from customer journey mapping to feedback and analytics — for stronger retention and loyalty.",
-    bullets: ["Journey mapping", "Feedback analytics", "Loyalty programs", "CX strategy"],
+    icon: Bot,
+    title: "Intelligent Agents",
+    desc: "AI agents that take repetitive admin off the entrepreneur's plate — from automated supplier ordering to customer engagement and reporting.",
+    bullets: ["Auto-reorder agents", "WhatsApp/chat agents", "Sales & ops assistants", "Workflow automation"],
+  },
+  {
+    icon: Boxes,
+    title: "Software & Digitization",
+    desc: "Lightweight, low-bandwidth web and mobile software that digitizes operations for spazas, fast-food shops and service SMEs in the township.",
+    bullets: ["Web & mobile apps", "POS & sales tracking", "Inventory dashboards", "Supplier integrations"],
+  },
+  {
+    icon: Store,
+    title: "Competitiveness & Job Creation",
+    desc: "Every solution is designed to help Kasi businesses compete with formal players, scale revenue and create sustainable employment in their communities.",
+    bullets: ["Growth strategy", "Digital onboarding", "Local skills training", "Impact measurement"],
   },
 ];
 
@@ -56,7 +56,7 @@ function Solutions() {
       <Header />
       <PageBanner
         title="Our Solutions"
-        subtitle="A complete set of data and software services for businesses of every size."
+        subtitle="AI models, agents and software that digitize township businesses and create jobs."
       />
 
       <section className="py-20">

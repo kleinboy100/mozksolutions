@@ -4,22 +4,22 @@ import banner from "@/assets/page-banner.jpg";
 import kasiHero from "@/assets/kasiconnect-hero.jpg";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Cloud, Code2, BrainCircuit, HeartHandshake, ArrowRight } from "lucide-react";
+import { Bot, Boxes, BrainCircuit, Store, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "MOZK Solutions — Unlock the Power of Your Data" },
+      { title: "MOZK Solutions — Digitizing Township Businesses with AI" },
       {
         name: "description",
         content:
-          "MOZK Solutions helps you build and manage databases to extract insights and drive growth for your business.",
+          "MOZK Solutions builds AI models, intelligent agents and software solutions that digitize township businesses — making them competitive and creating employment.",
       },
-      { property: "og:title", content: "MOZK Solutions — Unlock the Power of Your Data" },
+      { property: "og:title", content: "MOZK Solutions — Digitizing Township Businesses with AI" },
       {
         property: "og:description",
         content:
-          "Affordable, reliable data solutions for the education sector and small to medium-sized businesses.",
+          "AI models, agents and software that help township SMEs compete, grow and create jobs.",
       },
     ],
   }),
@@ -28,24 +28,24 @@ export const Route = createFileRoute("/")({
 
 const services = [
   {
-    icon: Cloud,
-    title: "Cloud Analytics & Modernization",
-    desc: "Harness the power of the cloud to manage and analyze your data, with insights and visualizations that enable informed decisions.",
-  },
-  {
-    icon: Code2,
-    title: "Application Development",
-    desc: "Custom web, mobile, and desktop applications built by experienced developers to meet your unique business needs.",
-  },
-  {
     icon: BrainCircuit,
-    title: "Data Science & Machine Learning",
-    desc: "Advanced analytics that identify patterns and trends in your data to drive growth and improve performance.",
+    title: "AI Models for Township SMEs",
+    desc: "Custom forecasting and decision models — like Kota AI — that help informal businesses predict demand, reduce waste and grow profitably.",
   },
   {
-    icon: HeartHandshake,
-    title: "Full Customer Experience",
-    desc: "From customer journey mapping to feedback analytics — services to help you deliver an exceptional experience.",
+    icon: Bot,
+    title: "Intelligent Agents",
+    desc: "AI agents that automate ordering, customer engagement and admin work, so township entrepreneurs can focus on running their business.",
+  },
+  {
+    icon: Boxes,
+    title: "Software & Digitization",
+    desc: "Lightweight, low-bandwidth web and mobile software that digitizes operations — from sales to stock — for fast-food shops, spazas and service SMEs.",
+  },
+  {
+    icon: Store,
+    title: "Competitiveness & Jobs",
+    desc: "We equip Kasi businesses with the tools to compete with formal players, scale revenue and create sustainable local employment.",
   },
 ];
 
@@ -74,14 +74,15 @@ function Index() {
         <div className="container relative mx-auto px-6 py-32">
           <div className="max-w-3xl">
             <span className="inline-block text-xs uppercase tracking-[0.3em] text-primary mb-6">
-              Data · Insights · Growth
+              AI · Agents · Digitization
             </span>
             <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-[1.05]">
-              Unlock the Power of Your Data{" "}
-              <span className="text-primary">with MOZK Solutions</span>
+              Digitizing Township Businesses{" "}
+              <span className="text-primary">with AI & Smart Software</span>
             </h1>
             <p className="mt-8 text-lg md:text-xl text-foreground/80 max-w-xl leading-relaxed">
-              MOZK Solutions helps you build and manage databases to extract insights and drive growth for your business.
+              MOZK Solutions builds AI models, intelligent agents and software that help Kasi
+              businesses become competitive, grow sustainably and create jobs in their communities.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -107,20 +108,24 @@ function Index() {
           <div>
             <span className="text-xs uppercase tracking-[0.3em] text-primary">Our approach</span>
             <h2 className="mt-4 text-4xl md:text-5xl font-bold text-foreground">
-              Transform Your Data into Actionable Insights
+              Turning Township Hustles into Competitive Businesses
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              At MOZK Solutions, we believe that data is the key to unlocking your business's full potential. Our team of experts can help you build and manage databases that extract insights and drive growth.
+              Township SMEs are the engine of local economies — but most operate without the digital
+              tools that formal businesses take for granted. We close that gap with AI models,
+              agents and software built specifically for the Kasi context: low-bandwidth, affordable
+              and grounded in how informal businesses actually trade.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              We specialize in working with the education sector, small to medium-sized enterprises, and small to medium-sized businesses — offering affordable and reliable solutions to meet your unique needs.
+              Every solution we ship is designed to do two things — make our clients more
+              competitive, and create employment in the communities they serve.
             </p>
           </div>
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-hero rounded-2xl opacity-50 blur-xl" />
             <img
               src={heroBg}
-              alt="Data network"
+              alt="AI digitizing township businesses"
               className="relative rounded-2xl shadow-elegant border border-border"
               width={1920}
               height={1080}
@@ -135,9 +140,10 @@ function Index() {
         <div className="container mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-xs uppercase tracking-[0.3em] text-primary">What we do</span>
-            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-foreground">Our Services</h2>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-foreground">How We Digitize the Kasi Economy</h2>
             <p className="mt-6 text-muted-foreground">
-              A range of services to help you unlock the power of your data and drive growth — for startups, enterprises and the education sector alike.
+              AI models, intelligent agents and software solutions — purpose-built to make township
+              businesses competitive and to create local employment.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -214,10 +220,11 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-overlay" />
         <div className="container relative mx-auto px-6 text-center max-w-3xl">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Accelerate Your Business <span className="text-primary">with MOZK Solutions</span>
+            Let's Digitize Your Township Business <span className="text-primary">with MOZK</span>
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
-            Don't let your data go to waste. Contact us today to schedule a consultation and learn how we can help you unlock the power of your data and drive growth for your business.
+            Whether you run a fast-food shop, a spaza or a growing SME — we'll build the AI models,
+            agents and software you need to compete, grow and create jobs in your community.
           </p>
           <Link
             to="/contact"
