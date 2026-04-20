@@ -69,12 +69,15 @@ function Vision() {
           />
           <div>
             <span className="text-xs uppercase tracking-[0.3em] text-primary">Our story</span>
-            <h2 className="mt-4 text-4xl font-bold text-foreground">Built on Experience</h2>
+            <h2 className="mt-4 text-4xl font-bold text-foreground">Built for the Kasi Economy</h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              MOZK Solutions was founded with a vision to make data-driven solutions accessible to all. Our team of professionals has years of experience in data analysis and web development. We specialize in providing affordable and reliable solutions for small to medium-sized enterprises, businesses, and the education sector.
+              MOZK Solutions was founded to close the digital gap between township businesses and
+              the formal economy. We combine deep technical expertise — AI, software engineering
+              and data — with first-hand understanding of how informal businesses operate.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Our passion for data and technology drives us to deliver exceptional services to our clients.
+              The result: practical AI models, agents and software that move the needle on
+              competitiveness, profitability and local job creation.
             </p>
           </div>
         </div>
