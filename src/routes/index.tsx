@@ -28,24 +28,24 @@ export const Route = createFileRoute("/")({
 
 const services = [
   {
-    icon: Cloud,
-    title: "Cloud Analytics & Modernization",
-    desc: "Harness the power of the cloud to manage and analyze your data, with insights and visualizations that enable informed decisions.",
-  },
-  {
-    icon: Code2,
-    title: "Application Development",
-    desc: "Custom web, mobile, and desktop applications built by experienced developers to meet your unique business needs.",
-  },
-  {
     icon: BrainCircuit,
-    title: "Data Science & Machine Learning",
-    desc: "Advanced analytics that identify patterns and trends in your data to drive growth and improve performance.",
+    title: "AI Models for Township SMEs",
+    desc: "Custom forecasting and decision models — like Kota AI — that help informal businesses predict demand, reduce waste and grow profitably.",
   },
   {
-    icon: HeartHandshake,
-    title: "Full Customer Experience",
-    desc: "From customer journey mapping to feedback analytics — services to help you deliver an exceptional experience.",
+    icon: Bot,
+    title: "Intelligent Agents",
+    desc: "AI agents that automate ordering, customer engagement and admin work, so township entrepreneurs can focus on running their business.",
+  },
+  {
+    icon: Boxes,
+    title: "Software & Digitization",
+    desc: "Lightweight, low-bandwidth web and mobile software that digitizes operations — from sales to stock — for fast-food shops, spazas and service SMEs.",
+  },
+  {
+    icon: Store,
+    title: "Competitiveness & Jobs",
+    desc: "We equip Kasi businesses with the tools to compete with formal players, scale revenue and create sustainable local employment.",
   },
 ];
 
