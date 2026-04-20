@@ -6,6 +6,7 @@ import { Logo } from "./Logo";
 const links = [
   { to: "/", label: "Home" },
   { to: "/solutions", label: "Solutions" },
+  { to: "/kasiconnect", label: "KasiConnect" },
   { to: "/vision", label: "Vision" },
   { to: "/blog", label: "Blog" },
 ] as const;
