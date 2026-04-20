@@ -86,9 +86,11 @@ function Vision() {
       <section className="py-20">
         <div className="container mx-auto px-6 text-center max-w-3xl">
           <span className="text-xs uppercase tracking-[0.3em] text-primary">Leadership</span>
-          <h2 className="mt-4 text-4xl font-bold text-foreground">Experienced Leadership</h2>
+          <h2 className="mt-4 text-4xl font-bold text-foreground">Operators & Builders</h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">
-            At MOZK Solutions, our team is led by experienced professionals with years of expertise in data analysis and web development. Our leadership team is dedicated to providing exceptional services and building strong relationships with clients — delivering solutions that exceed expectations.
+            Our leadership team blends AI, software and on-the-ground experience working with
+            township SMEs. We don't just ship technology — we partner with our clients to digitize
+            their operations, grow their revenue and hire from their communities.
           </p>
         </div>
       </section>
