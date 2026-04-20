@@ -33,10 +33,14 @@ export const Route = createRootRoute({
       { name: "description", content: "Unlock the power of your data with MOZK Solutions — analytics, applications, and machine learning." },
       { name: "author", content: "MOZK Solutions" },
       { property: "og:title", content: "MOZK Solutions" },
-      { property: "og:description", content: "Unlock the power of your data with MOZK Solutions." },
+      { property: "og:description", content: "Unlock the power of your data with MOZK Solutions — analytics, applications, and machine learning." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "MOZK Solutions" },
+      { name: "twitter:description", content: "Unlock the power of your data with MOZK Solutions — analytics, applications, and machine learning." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/rDxSiv8NcXgcPfSugyIwBb1mlW72/social-images/social-1776686606144-Screenshot_20260109-145416.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/rDxSiv8NcXgcPfSugyIwBb1mlW72/social-images/social-1776686606144-Screenshot_20260109-145416.webp" },
     ],
     links: [
       {
