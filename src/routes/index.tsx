@@ -9,17 +9,17 @@ import { Bot, Boxes, BrainCircuit, Store, ArrowRight } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "MOZK Solutions — Unlock the Power of Your Data" },
+      { title: "MOZK Solutions — Digitizing Township Businesses with AI" },
       {
         name: "description",
         content:
-          "MOZK Solutions helps you build and manage databases to extract insights and drive growth for your business.",
+          "MOZK Solutions builds AI models, intelligent agents and software solutions that digitize township businesses — making them competitive and creating employment.",
       },
-      { property: "og:title", content: "MOZK Solutions — Unlock the Power of Your Data" },
+      { property: "og:title", content: "MOZK Solutions — Digitizing Township Businesses with AI" },
       {
         property: "og:description",
         content:
-          "Affordable, reliable data solutions for the education sector and small to medium-sized businesses.",
+          "AI models, agents and software that help township SMEs compete, grow and create jobs.",
       },
     ],
   }),
