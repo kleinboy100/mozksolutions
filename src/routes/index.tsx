@@ -108,20 +108,24 @@ function Index() {
           <div>
             <span className="text-xs uppercase tracking-[0.3em] text-primary">Our approach</span>
             <h2 className="mt-4 text-4xl md:text-5xl font-bold text-foreground">
-              Transform Your Data into Actionable Insights
+              Turning Township Hustles into Competitive Businesses
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              At MOZK Solutions, we believe that data is the key to unlocking your business's full potential. Our team of experts can help you build and manage databases that extract insights and drive growth.
+              Township SMEs are the engine of local economies — but most operate without the digital
+              tools that formal businesses take for granted. We close that gap with AI models,
+              agents and software built specifically for the Kasi context: low-bandwidth, affordable
+              and grounded in how informal businesses actually trade.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              We specialize in working with the education sector, small to medium-sized enterprises, and small to medium-sized businesses — offering affordable and reliable solutions to meet your unique needs.
+              Every solution we ship is designed to do two things — make our clients more
+              competitive, and create employment in the communities they serve.
             </p>
           </div>
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-hero rounded-2xl opacity-50 blur-xl" />
             <img
               src={heroBg}
-              alt="Data network"
+              alt="AI digitizing township businesses"
               className="relative rounded-2xl shadow-elegant border border-border"
               width={1920}
               height={1080}
@@ -136,9 +140,10 @@ function Index() {
         <div className="container mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-xs uppercase tracking-[0.3em] text-primary">What we do</span>
-            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-foreground">Our Services</h2>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-foreground">How We Digitize the Kasi Economy</h2>
             <p className="mt-6 text-muted-foreground">
-              A range of services to help you unlock the power of your data and drive growth — for startups, enterprises and the education sector alike.
+              AI models, intelligent agents and software solutions — purpose-built to make township
+              businesses competitive and to create local employment.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
