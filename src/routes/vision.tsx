@@ -36,10 +36,14 @@ function Vision() {
             <span className="text-xs uppercase tracking-[0.3em] text-primary">Mission</span>
             <h2 className="mt-4 text-4xl font-bold text-foreground">Our Mission</h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              At MOZK Solutions, we are dedicated to helping our clients build databases to extract insights that drive improvement. Our team of professionals specializes in data analysis and web development, providing affordable and reliable solutions for small to medium-sized enterprises, businesses, and the education sector.
+              MOZK Solutions exists to digitize the township economy. We build AI models,
+              intelligent agents and software solutions that give Kasi entrepreneurs the same
+              competitive tools as formal businesses — affordable, low-bandwidth and grounded in
+              the realities of how they trade.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Our mission is to showcase our services and generate leads for our clients. We aim to make data-driven solutions accessible to all. Let us help you succeed by harnessing the power of data.
+              By making informal businesses more competitive, we help them grow revenue, retain
+              profit in their communities and create sustainable local employment.
             </p>
           </div>
           <img
