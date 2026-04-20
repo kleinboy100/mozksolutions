@@ -74,14 +74,15 @@ function Index() {
         <div className="container relative mx-auto px-6 py-32">
           <div className="max-w-3xl">
             <span className="inline-block text-xs uppercase tracking-[0.3em] text-primary mb-6">
-              Data · Insights · Growth
+              AI · Agents · Digitization
             </span>
             <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-[1.05]">
-              Unlock the Power of Your Data{" "}
-              <span className="text-primary">with MOZK Solutions</span>
+              Digitizing Township Businesses{" "}
+              <span className="text-primary">with AI & Smart Software</span>
             </h1>
             <p className="mt-8 text-lg md:text-xl text-foreground/80 max-w-xl leading-relaxed">
-              MOZK Solutions helps you build and manage databases to extract insights and drive growth for your business.
+              MOZK Solutions builds AI models, intelligent agents and software that help Kasi
+              businesses become competitive, grow sustainably and create jobs in their communities.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
