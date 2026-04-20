@@ -4,7 +4,7 @@ import banner from "@/assets/page-banner.jpg";
 import kasiHero from "@/assets/kasiconnect-hero.jpg";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Cloud, Code2, BrainCircuit, HeartHandshake, ArrowRight } from "lucide-react";
+import { Bot, Boxes, BrainCircuit, Store, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
