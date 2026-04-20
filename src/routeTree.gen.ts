@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as VisionRouteImport } from './routes/vision'
 import { Route as SolutionsRouteImport } from './routes/solutions'
+import { Route as KasiconnectRouteImport } from './routes/kasiconnect'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as IndexRouteImport } from './routes/index'
@@ -23,6 +24,11 @@ const VisionRoute = VisionRouteImport.update({
 const SolutionsRoute = SolutionsRouteImport.update({
   id: '/solutions',
   path: '/solutions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KasiconnectRoute = KasiconnectRouteImport.update({
+  id: '/kasiconnect',
+  path: '/kasiconnect',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -45,6 +51,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
+  '/kasiconnect': typeof KasiconnectRoute
   '/solutions': typeof SolutionsRoute
   '/vision': typeof VisionRoute
 }
@@ -52,6 +59,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
+  '/kasiconnect': typeof KasiconnectRoute
   '/solutions': typeof SolutionsRoute
   '/vision': typeof VisionRoute
 }
@@ -60,21 +68,36 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
+  '/kasiconnect': typeof KasiconnectRoute
   '/solutions': typeof SolutionsRoute
   '/vision': typeof VisionRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/blog' | '/contact' | '/solutions' | '/vision'
+  fullPaths:
+    | '/'
+    | '/blog'
+    | '/contact'
+    | '/kasiconnect'
+    | '/solutions'
+    | '/vision'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/blog' | '/contact' | '/solutions' | '/vision'
-  id: '__root__' | '/' | '/blog' | '/contact' | '/solutions' | '/vision'
+  to: '/' | '/blog' | '/contact' | '/kasiconnect' | '/solutions' | '/vision'
+  id:
+    | '__root__'
+    | '/'
+    | '/blog'
+    | '/contact'
+    | '/kasiconnect'
+    | '/solutions'
+    | '/vision'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BlogRoute: typeof BlogRoute
   ContactRoute: typeof ContactRoute
+  KasiconnectRoute: typeof KasiconnectRoute
   SolutionsRoute: typeof SolutionsRoute
   VisionRoute: typeof VisionRoute
 }
@@ -93,6 +116,13 @@ declare module '@tanstack/react-router' {
       path: '/solutions'
       fullPath: '/solutions'
       preLoaderRoute: typeof SolutionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kasiconnect': {
+      id: '/kasiconnect'
+      path: '/kasiconnect'
+      fullPath: '/kasiconnect'
+      preLoaderRoute: typeof KasiconnectRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -123,6 +153,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BlogRoute: BlogRoute,
   ContactRoute: ContactRoute,
+  KasiconnectRoute: KasiconnectRoute,
   SolutionsRoute: SolutionsRoute,
   VisionRoute: VisionRoute,
 }

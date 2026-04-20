@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroBg from "@/assets/hero-bg.jpg";
 import banner from "@/assets/page-banner.jpg";
+import kasiHero from "@/assets/kasiconnect-hero.jpg";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Cloud, Code2, BrainCircuit, HeartHandshake, ArrowRight } from "lucide-react";
@@ -160,6 +161,49 @@ function Index() {
             >
               Explore all solutions <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* KasiConnect feature */}
+      <section className="py-24">
+        <div className="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+          <div className="relative order-2 md:order-1">
+            <div className="absolute -inset-4 bg-gradient-hero rounded-2xl opacity-50 blur-xl" />
+            <img
+              src={kasiHero}
+              alt="Kota AI demand forecasting in a township fast-food shop"
+              className="relative rounded-2xl shadow-elegant border border-border w-full"
+              width={1920}
+              height={1080}
+              loading="lazy"
+            />
+          </div>
+          <div className="order-1 md:order-2">
+            <span className="text-xs uppercase tracking-[0.3em] text-primary">Featured product · KasiConnect</span>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-foreground">
+              Meet <span className="text-primary">Kota AI</span> — demand forecasting for the Kasi economy.
+            </h2>
+            <p className="mt-6 text-muted-foreground leading-relaxed">
+              A live AI forecasting and reorder API built for township fast-food restaurants. Already powering
+              Nosty's Fresh Fast Food with weather-aware, event-aware daily predictions.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
+                to="/kasiconnect"
+                className="inline-flex items-center gap-2 px-7 py-3 rounded-md bg-primary text-primary-foreground font-medium hover:shadow-glow transition-smooth"
+              >
+                Discover Kota AI <ArrowRight className="w-4 h-4" />
+              </Link>
+              <a
+                href="https://www.nosty.co.za"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-7 py-3 rounded-md border border-primary/40 text-foreground hover:bg-primary/10 transition-smooth"
+              >
+                Visit Nosty's
+              </a>
+            </div>
           </div>
         </div>
       </section>

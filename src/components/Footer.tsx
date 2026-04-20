@@ -16,6 +16,7 @@ export function Footer() {
           <ul className="space-y-2 text-sm">
             <li><Link to="/" className="text-foreground/80 hover:text-primary transition-smooth">Home</Link></li>
             <li><Link to="/solutions" className="text-foreground/80 hover:text-primary transition-smooth">Solutions</Link></li>
+            <li><Link to="/kasiconnect" className="text-foreground/80 hover:text-primary transition-smooth">KasiConnect</Link></li>
             <li><Link to="/vision" className="text-foreground/80 hover:text-primary transition-smooth">Vision</Link></li>
             <li><Link to="/blog" className="text-foreground/80 hover:text-primary transition-smooth">Blog</Link></li>
             <li><Link to="/contact" className="text-foreground/80 hover:text-primary transition-smooth">Contact</Link></li>
