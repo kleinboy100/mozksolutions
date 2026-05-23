@@ -1,4 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import heroBg from "@/assets/hero-bg.jpg";
 import banner from "@/assets/page-banner.jpg";
 import kasiHero from "@/assets/kasiconnect-hero.jpg";
@@ -6,25 +7,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Bot, Boxes, BrainCircuit, Store, Database, BarChart3, ArrowRight } from "lucide-react";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "MOZK Solutions — Digitizing Township Businesses with AI" },
-      {
-        name: "description",
-        content:
-          "MOZK Solutions builds AI models, intelligent agents and software solutions that digitize township businesses — making them competitive and creating employment.",
-      },
-      { property: "og:title", content: "MOZK Solutions — Digitizing Township Businesses with AI" },
-      {
-        property: "og:description",
-        content:
-          "AI models, agents and software that help township SMEs compete, grow and create jobs.",
-      },
-    ],
-  }),
-  component: Index,
-});
+
 
 const services = [
   {
@@ -62,6 +45,30 @@ const services = [
 function Index() {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        { ([
+          ...[
+      { title: "MOZK Solutions — Digitizing Township Businesses with AI" },
+      {
+        name: "description",
+        content:
+          "MOZK Solutions builds AI models, intelligent agents and software solutions that digitize township businesses — making them competitive and creating employment.",
+      },
+      { property: "og:title", content: "MOZK Solutions — Digitizing Township Businesses with AI" },
+      {
+        property: "og:description",
+        content:
+          "AI models, agents and software that help township SMEs compete, grow and create jobs.",
+      },
+    ]
+        ] as Array<Record<string,string>>).map((t, i) => {
+          if (t.title) return <title key={i}>{t.title}</title>;
+          if (t.name) return <meta key={i} name={t.name} content={t.content} />;
+          if (t.property) return <meta key={i} property={t.property} content={t.content} />;
+          return null;
+        }) }
+      </Helmet>
+
       <Header />
 
       {/* Hero */}
@@ -254,3 +261,5 @@ function Index() {
     </div>
   );
 }
+
+export default Index;

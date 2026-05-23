@@ -1,27 +1,11 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PageBanner } from "@/components/PageBanner";
 import { BrainCircuit, Bot, Boxes, Store, Database, BarChart3, Check } from "lucide-react";
 
-export const Route = createFileRoute("/solutions")({
-  head: () => ({
-    meta: [
-      { title: "Solutions — MOZK Solutions" },
-      {
-        name: "description",
-        content:
-          "AI models, intelligent agents and software solutions that digitize township businesses, make them competitive and create local employment.",
-      },
-      { property: "og:title", content: "Solutions — MOZK Solutions" },
-      {
-        property: "og:description",
-        content: "Custom AI, agents and software built for the Kasi economy.",
-      },
-    ],
-  }),
-  component: Solutions,
-});
+
 
 const solutions = [
   {
@@ -65,6 +49,29 @@ const solutions = [
 function Solutions() {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        { ([
+          ...[
+      { title: "Solutions — MOZK Solutions" },
+      {
+        name: "description",
+        content:
+          "AI models, intelligent agents and software solutions that digitize township businesses, make them competitive and create local employment.",
+      },
+      { property: "og:title", content: "Solutions — MOZK Solutions" },
+      {
+        property: "og:description",
+        content: "Custom AI, agents and software built for the Kasi economy.",
+      },
+    ]
+        ] as Array<Record<string,string>>).map((t, i) => {
+          if (t.title) return <title key={i}>{t.title}</title>;
+          if (t.name) return <meta key={i} name={t.name} content={t.content} />;
+          if (t.property) return <meta key={i} property={t.property} content={t.content} />;
+          return null;
+        }) }
+      </Helmet>
+
       <Header />
       <PageBanner
         title="Our Solutions"
@@ -115,3 +122,5 @@ function Solutions() {
     </div>
   );
 }
+
+export default Solutions;

@@ -1,4 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import heroImg from "@/assets/kasiconnect-hero.jpg";
@@ -18,27 +19,7 @@ import {
   Check,
 } from "lucide-react";
 
-export const Route = createFileRoute("/kasiconnect")({
-  head: () => ({
-    meta: [
-      { title: "KasiConnect & Kota AI — Demand Forecasting for Township Restaurants" },
-      {
-        name: "description",
-        content:
-          "Kota AI is a demand forecasting and reorder API by KasiConnect (a unit of MOZK Solutions) — built for township fast-food vendors. Live with Nosty's Fresh Fast Food.",
-      },
-      { property: "og:title", content: "KasiConnect & Kota AI — Demand Forecasting API" },
-      {
-        property: "og:description",
-        content:
-          "AI-powered demand forecasting, weather and event-aware reorder logic for the Kasi economy. Live API powering Nosty's Fresh Fast Food.",
-      },
-      { property: "og:image", content: heroImg },
-      { name: "twitter:image", content: heroImg },
-    ],
-  }),
-  component: KasiConnect,
-});
+
 
 const features = [
   {
@@ -113,6 +94,32 @@ const roadmap = [
 function KasiConnect() {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        { ([
+          ...[
+      { title: "KasiConnect & Kota AI — Demand Forecasting for Township Restaurants" },
+      {
+        name: "description",
+        content:
+          "Kota AI is a demand forecasting and reorder API by KasiConnect (a unit of MOZK Solutions) — built for township fast-food vendors. Live with Nosty's Fresh Fast Food.",
+      },
+      { property: "og:title", content: "KasiConnect & Kota AI — Demand Forecasting API" },
+      {
+        property: "og:description",
+        content:
+          "AI-powered demand forecasting, weather and event-aware reorder logic for the Kasi economy. Live API powering Nosty's Fresh Fast Food.",
+      },
+      { property: "og:image", content: heroImg },
+      { name: "twitter:image", content: heroImg },
+    ]
+        ] as Array<Record<string,string>>).map((t, i) => {
+          if (t.title) return <title key={i}>{t.title}</title>;
+          if (t.name) return <meta key={i} name={t.name} content={t.content} />;
+          if (t.property) return <meta key={i} property={t.property} content={t.content} />;
+          return null;
+        }) }
+      </Helmet>
+
       <Header />
 
       {/* Hero */}
@@ -345,3 +352,5 @@ function KasiConnect() {
     </div>
   );
 }
+
+export default KasiConnect;

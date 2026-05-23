@@ -1,4 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PageBanner } from "@/components/PageBanner";
@@ -6,20 +7,7 @@ import blog1 from "@/assets/blog-1.jpg";
 import kasiHero from "@/assets/kasiconnect-hero.jpg";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 
-export const Route = createFileRoute("/blog")({
-  head: () => ({
-    meta: [
-      { title: "Recent Work — MOZK Solutions" },
-      {
-        name: "description",
-        content: "Recent work and case studies from MOZK Solutions, including KasiConnect's Kota AI demand forecasting API and education-sector projects.",
-      },
-      { property: "og:title", content: "Recent Work — MOZK Solutions" },
-      { property: "og:description", content: "Read our latest case studies and projects." },
-    ],
-  }),
-  component: Blog,
-});
+
 
 type Post = {
   title: string;
@@ -53,6 +41,25 @@ const posts: Post[] = [
 function Blog() {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        { ([
+          ...[
+      { title: "Recent Work — MOZK Solutions" },
+      {
+        name: "description",
+        content: "Recent work and case studies from MOZK Solutions, including KasiConnect's Kota AI demand forecasting API and education-sector projects.",
+      },
+      { property: "og:title", content: "Recent Work — MOZK Solutions" },
+      { property: "og:description", content: "Read our latest case studies and projects." },
+    ]
+        ] as Array<Record<string,string>>).map((t, i) => {
+          if (t.title) return <title key={i}>{t.title}</title>;
+          if (t.name) return <meta key={i} name={t.name} content={t.content} />;
+          if (t.property) return <meta key={i} property={t.property} content={t.content} />;
+          return null;
+        }) }
+      </Helmet>
+
       <Header />
       <PageBanner title="Recent Work" subtitle="Case studies and projects from MOZK Solutions." />
 
@@ -103,3 +110,5 @@ function Blog() {
     </div>
   );
 }
+
+export default Blog;

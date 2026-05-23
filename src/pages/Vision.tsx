@@ -1,13 +1,19 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PageBanner } from "@/components/PageBanner";
 import team from "@/assets/team.jpg";
 import leadership from "@/assets/leadership.jpg";
 
-export const Route = createFileRoute("/vision")({
-  head: () => ({
-    meta: [
+
+
+function Vision() {
+  return (
+    <div className="min-h-screen bg-background">
+      <Helmet>
+        { ([
+          ...[
       { title: "Vision — MOZK Solutions" },
       {
         name: "description",
@@ -19,14 +25,15 @@ export const Route = createFileRoute("/vision")({
         property: "og:description",
         content: "Discover our story, mission and the leadership behind MOZK Solutions.",
       },
-    ],
-  }),
-  component: Vision,
-});
+    ]
+        ] as Array<Record<string,string>>).map((t, i) => {
+          if (t.title) return <title key={i}>{t.title}</title>;
+          if (t.name) return <meta key={i} name={t.name} content={t.content} />;
+          if (t.property) return <meta key={i} property={t.property} content={t.content} />;
+          return null;
+        }) }
+      </Helmet>
 
-function Vision() {
-  return (
-    <div className="min-h-screen bg-background">
       <Header />
       <PageBanner title="Our Vision" subtitle="Digitizing township businesses to compete, grow and create jobs." />
 
@@ -117,3 +124,5 @@ function Vision() {
     </div>
   );
 }
+
+export default Vision;

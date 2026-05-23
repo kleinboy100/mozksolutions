@@ -1,13 +1,19 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PageBanner } from "@/components/PageBanner";
 import { Mail, MessageCircle, MapPin } from "lucide-react";
 import { useState } from "react";
 
-export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
+
+
+function Contact() {
+  const [sent, setSent] = useState(false);
+  return (
+    <div className="min-h-screen bg-background">
+      <Helmet>
+        { ([
+          ...[
       { title: "Let's Chat — MOZK Solutions" },
       {
         name: "description",
@@ -15,15 +21,15 @@ export const Route = createFileRoute("/contact")({
       },
       { property: "og:title", content: "Let's Chat — MOZK Solutions" },
       { property: "og:description", content: "Get in touch to discuss your data project." },
-    ],
-  }),
-  component: Contact,
-});
+    ]
+        ] as Array<Record<string,string>>).map((t, i) => {
+          if (t.title) return <title key={i}>{t.title}</title>;
+          if (t.name) return <meta key={i} name={t.name} content={t.content} />;
+          if (t.property) return <meta key={i} property={t.property} content={t.content} />;
+          return null;
+        }) }
+      </Helmet>
 
-function Contact() {
-  const [sent, setSent] = useState(false);
-  return (
-    <div className="min-h-screen bg-background">
       <Header />
       <PageBanner title="Let's Chat!" subtitle="Tell us about your project and we'll be in touch." />
 
@@ -109,3 +115,5 @@ function Contact() {
     </div>
   );
 }
+
+export default Contact;
