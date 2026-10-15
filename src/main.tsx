@@ -11,6 +11,7 @@ import Vision from "./pages/Vision";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import { WhatsAppChat } from "./components/WhatsAppChat";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -25,6 +26,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <WhatsAppChat />
       </BrowserRouter>
     </HelmetProvider>
   </React.StrictMode>

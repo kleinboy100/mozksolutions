@@ -6,6 +6,8 @@ import kasiHero from "@/assets/kasiconnect-hero.jpg";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Bot, Boxes, BrainCircuit, Store, Database, BarChart3, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { WHATSAPP_URL } from "@/lib/contact";
 
 
 
@@ -248,12 +250,11 @@ function Index() {
             Whether you run a fast-food shop, a spaza or a growing SME — we'll build the AI models,
             agents and software you need to compete, grow and create jobs in your community.
           </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 mt-10 px-8 py-4 rounded-md bg-primary text-primary-foreground font-medium hover:shadow-glow transition-smooth"
-          >
-            Let's Chat <ArrowRight className="w-4 h-4" />
-          </Link>
+          <Button asChild className="mt-10" size="lg">
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+              Let's Chat <ArrowRight className="w-4 h-4" />
+            </a>
+          </Button>
         </div>
       </section>
 

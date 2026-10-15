@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { WHATSAPP_URL } from "@/lib/contact";
 import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -109,12 +110,9 @@ function Solutions() {
           <p className="mt-4 text-muted-foreground">
             Tell us about your project and we'll put together a tailored proposal.
           </p>
-          <Link
-            to="/contact"
-            className="inline-block mt-8 px-7 py-3 rounded-md bg-primary text-primary-foreground font-medium hover:shadow-glow transition-smooth"
-          >
-            Let's Chat
-          </Link>
+          <Button asChild className="mt-8" size="lg">
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">Let's Chat</a>
+          </Button>
         </div>
       </section>
 
