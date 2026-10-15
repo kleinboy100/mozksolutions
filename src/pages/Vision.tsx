@@ -35,13 +35,13 @@ function Vision() {
       </Helmet>
 
       <Header />
-      <PageBanner title="Our Vision" subtitle="Digitizing township businesses to compete, grow and create jobs." />
+      <PageBanner title="Our Story & Impact" subtitle="Built for township businesses. Backed by results in the real world." />
 
       <section className="py-20">
         <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="text-xs uppercase tracking-[0.3em] text-primary">Mission</span>
-            <h2 className="mt-4 text-4xl font-bold text-foreground">Our Mission</h2>
+            <span className="text-xs uppercase tracking-[0.3em] text-primary">What sets us apart</span>
+            <h2 className="mt-4 text-4xl font-bold text-foreground">We Build. We Integrate. We Deliver.</h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
               MOZK Solutions exists to digitize the township economy. We build AI models,
               intelligent agents and software solutions that give Kasi entrepreneurs the same
@@ -49,8 +49,9 @@ function Vision() {
               the realities of how they trade.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              By making informal businesses more competitive, we help them grow revenue, retain
-              profit in their communities and create sustainable local employment.
+              At Nosty's Fresh Fast Food, our partnership enabled 40% sales growth in under six months.
+              Our model reduced waste by 20%, and app-integrated delivery mobilised two scooters
+              and helped create employment, including one full-time position.
             </p>
           </div>
           <img
@@ -83,8 +84,9 @@ function Vision() {
               and data — with first-hand understanding of how informal businesses operate.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              The result: practical AI models, agents and software that move the needle on
-              competitiveness, profitability and local job creation.
+              Our track record is practical: a live restaurant app, data pipelines feeding Kota AI,
+              and forecasting connected to daily stock decisions. We work alongside the business
+              to make technology part of its operations, not a standalone experiment.
             </p>
           </div>
         </div>
@@ -109,7 +111,7 @@ function Vision() {
             Introducing <span className="text-primary">KasiConnect</span>
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">
-            KasiConnect is our digital innovation unit focused on the township economy. Its first product, Kota AI, is a live demand forecasting and reorder API tailored for small-to-medium fast-food restaurants in the North West province of South Africa.
+            KasiConnect is our digital innovation unit focused on the township economy. Its product, Kota AI, is live at Nosty's Fresh Fast Food, using sales data, weather and local events to guide stock decisions. The model reduced waste by 20%.
           </p>
           <Link
             to="/kasiconnect"

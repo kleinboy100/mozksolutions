@@ -42,8 +42,8 @@ const solutions = [
   {
     icon: Store,
     title: "Competitiveness & Job Creation",
-    desc: "Every solution is designed to help Kasi businesses compete with formal players, scale revenue and create sustainable employment in their communities.",
-    bullets: ["Growth strategy", "Digital onboarding", "Local skills training", "Impact measurement"],
+    desc: "Our work at Nosty's connects digitization to real economic activity: increased sales, app-integrated delivery with two scooters, and employment including one full-time position.",
+    bullets: ["Business digitization", "Integrated delivery", "Operational support", "Measurable client outcomes"],
   },
 ];
 
@@ -76,7 +76,7 @@ function Solutions() {
       <Header />
       <PageBanner
         title="Our Solutions"
-        subtitle="AI models, agents and software that digitize township businesses and create jobs."
+        subtitle="AI, data and software backed by real results: 40% sales growth and 20% less waste at Nosty's."
       />
 
       <section className="py-20">
@@ -106,9 +106,10 @@ function Solutions() {
 
       <section className="py-20 bg-[var(--navy-deep)]">
         <div className="container mx-auto px-6 text-center max-w-2xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Ready to get started?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Proven in a real township business.</h2>
           <p className="mt-4 text-muted-foreground">
-            Tell us about your project and we'll put together a tailored proposal.
+            Nosty's grew sales by 40% in under six months of working with us. Tell us about your
+            operations and let's discuss the right AI, data and software for your business.
           </p>
           <Button asChild className="mt-8" size="lg">
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">Let's Chat</a>
