@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import { Logo } from "./Logo";
+import { MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { WHATSAPP_URL } from "@/lib/contact";
 
 export function Footer() {
   return (
@@ -25,12 +28,11 @@ export function Footer() {
         <div>
           <h4 className="text-sm font-semibold text-primary mb-4 tracking-widest uppercase">Get in touch</h4>
           <p className="text-sm text-muted-foreground">Schedule a consultation and learn how data can drive your growth.</p>
-          <Link
-            to="/contact"
-            className="inline-block mt-4 text-sm px-5 py-2 rounded-md bg-primary text-primary-foreground font-medium hover:shadow-glow transition-smooth"
-          >
-            Let's Chat
-          </Link>
+          <Button asChild className="mt-4">
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+              <MessageCircle aria-hidden="true" /> Let's Chat
+            </a>
+          </Button>
         </div>
       </div>
       <div className="border-t border-border py-6 text-center text-xs text-muted-foreground">

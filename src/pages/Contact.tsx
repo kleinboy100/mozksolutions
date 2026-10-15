@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { PageBanner } from "@/components/PageBanner";
 import { Mail, MessageCircle, MapPin } from "lucide-react";
 import { useState } from "react";
+import { CONTACT_EMAIL, WHATSAPP_NUMBER, WHATSAPP_URL } from "@/lib/contact";
 
 
 
@@ -47,7 +48,7 @@ function Contact() {
                 </div>
                 <div>
                   <div className="text-sm text-primary uppercase tracking-widest">Email</div>
-                  <div className="text-foreground">hello@mozksolutions.com</div>
+                  <a href={`mailto:${CONTACT_EMAIL}`} className="text-foreground hover:text-primary break-all">{CONTACT_EMAIL}</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -56,7 +57,7 @@ function Contact() {
                 </div>
                 <div>
                   <div className="text-sm text-primary uppercase tracking-widest">Chat</div>
-                  <div className="text-foreground">Available Mon–Fri, 9am–5pm</div>
+                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary">WhatsApp · {WHATSAPP_NUMBER}</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">

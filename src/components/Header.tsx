@@ -1,7 +1,9 @@
 import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, MessageCircle } from "lucide-react";
 import { Logo } from "./Logo";
+import { Button } from "@/components/ui/button";
+import { WHATSAPP_URL } from "@/lib/contact";
 
 const links = [
   { to: "/", label: "Home", end: true },
@@ -30,12 +32,11 @@ export function Header() {
               {l.label}
             </NavLink>
           ))}
-          <Link
-            to="/contact"
-            className="text-sm px-4 py-2 rounded-md bg-primary text-primary-foreground font-medium hover:shadow-glow transition-smooth"
-          >
-            Let's Chat
-          </Link>
+          <Button asChild>
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+              <MessageCircle aria-hidden="true" /> Let's Chat
+            </a>
+          </Button>
         </nav>
         <button
           className="md:hidden text-foreground"
@@ -53,13 +54,11 @@ export function Header() {
                 {l.label}
               </Link>
             ))}
-            <Link
-              to="/contact"
-              className="text-sm px-4 py-2 rounded-md bg-primary text-primary-foreground font-medium text-center"
-              onClick={() => setOpen(false)}
-            >
-              Let's Chat
-            </Link>
+            <Button asChild>
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
+                <MessageCircle aria-hidden="true" /> Let's Chat
+              </a>
+            </Button>
           </nav>
         </div>
       )}
