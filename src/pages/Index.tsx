@@ -5,6 +5,7 @@ import banner from "@/assets/page-banner.jpg";
 import kasiHero from "@/assets/kasiconnect-hero.jpg";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { NostyResults } from "@/components/NostyResults";
 import { Bot, Boxes, BrainCircuit, Store, Database, BarChart3, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { WHATSAPP_URL } from "@/lib/contact";
@@ -50,17 +51,17 @@ function Index() {
       <Helmet>
         { ([
           ...[
-      { title: "MOZK Solutions — Digitizing Township Businesses with AI" },
+      { title: "MOZK Solutions — Proven AI & Software for Township Businesses" },
       {
         name: "description",
         content:
-          "MOZK Solutions builds AI models, intelligent agents and software solutions that digitize township businesses — making them competitive and creating employment.",
+          "MOZK Solutions digitizes township businesses with AI, software and data. At Nosty's: 40% sales growth in under six months, 20% less waste and delivery-enabled job creation.",
       },
-      { property: "og:title", content: "MOZK Solutions — Digitizing Township Businesses with AI" },
+      { property: "og:title", content: "MOZK Solutions — Proven Results for Township Businesses" },
       {
         property: "og:description",
         content:
-          "AI models, agents and software that help township SMEs compete, grow and create jobs.",
+          "Real client results: 40% sales growth in under six months at Nosty's Fresh Fast Food, 20% less waste and integrated delivery.",
       },
     ]
         ] as Array<Record<string,string>>).map((t, i) => {
@@ -74,7 +75,7 @@ function Index() {
       <Header />
 
       {/* Hero */}
-      <section className="relative min-h-[100vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[88vh] flex items-center overflow-hidden">
         <img
           src={banner}
           alt="Modern glass architecture"
@@ -93,15 +94,16 @@ function Index() {
         <div className="container relative mx-auto px-6 py-32">
           <div className="max-w-3xl">
             <span className="inline-block text-xs uppercase tracking-[0.3em] text-primary mb-6">
-              AI · Agents · Digitization
+              Proven results · AI · Data · Software
             </span>
             <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-[1.05]">
-              Digitizing Township Businesses{" "}
-              <span className="text-primary">with AI & Smart Software</span>
+              MOZK SOLUTIONS{" "}
+              <span className="text-primary">Built in the Kasi. Proven in business.</span>
             </h1>
             <p className="mt-8 text-lg md:text-xl text-foreground/80 max-w-xl leading-relaxed">
-              MOZK Solutions builds AI models, intelligent agents and software that help Kasi
-              businesses become competitive, grow sustainably and create jobs in their communities.
+              We turn data, AI models, intelligent agents and software into measurable business results.
+              At Nosty's Fresh Fast Food, our partnership enabled 40% sales growth in under six months
+              and a 20% reduction in waste.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -121,13 +123,15 @@ function Index() {
         </div>
       </section>
 
+      <NostyResults />
+
       {/* Transform section */}
       <section className="py-24">
         <div className="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
           <div>
             <span className="text-xs uppercase tracking-[0.3em] text-primary">Our approach</span>
             <h2 className="mt-4 text-4xl md:text-5xl font-bold text-foreground">
-              Turning Township Hustles into Competitive Businesses
+              More Than Software. A Business Partner.
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
               Township SMEs are the engine of local economies — but most operate without the digital
@@ -141,8 +145,9 @@ function Index() {
               that data into insights, dashboards and AI-driven decisions owners can act on daily.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Every solution we ship is designed to do two things — make our clients more
-              competitive, and create employment in the communities they serve.
+              Our work with Nosty's shows what this looks like in practice: increased sales,
+              reduced waste, app-integrated delivery with two scooters, and employment created,
+              including one full-time position. We build around the business, not just the technology.
             </p>
           </div>
           <div className="relative">
@@ -215,15 +220,16 @@ function Index() {
               Meet <span className="text-primary">Kota AI</span> — demand forecasting for the Kasi economy.
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              A live AI forecasting and reorder API built for township fast-food restaurants. Already powering
-              Nosty's Fresh Fast Food with weather-aware, event-aware daily predictions.
+              Our proprietary forecasting and reorder model is live at Nosty's Fresh Fast Food.
+              It reduced waste by 20% as part of a wider digitization partnership that increased sales
+              by 40% in under six months and brought delivery into the app.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 to="/kasiconnect"
                 className="inline-flex items-center gap-2 px-7 py-3 rounded-md bg-primary text-primary-foreground font-medium hover:shadow-glow transition-smooth"
               >
-                Discover Kota AI <ArrowRight className="w-4 h-4" />
+                See the client results <ArrowRight className="w-4 h-4" />
               </Link>
               <a
                 href="https://www.nosty.co.za"
@@ -244,11 +250,11 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-overlay" />
         <div className="container relative mx-auto px-6 text-center max-w-3xl">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Let's Digitize Your Township Business <span className="text-primary">with MOZK</span>
+            Work with a Partner <span className="text-primary">with Proven Results</span>
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
-            Whether you run a fast-food shop, a spaza or a growing SME — we'll build the AI models,
-            agents and software you need to compete, grow and create jobs in your community.
+            From sales and stock data to forecasting and delivery, our work at Nosty's connects
+            technology to everyday operations. Tell us where your business needs to go next.
           </p>
           <Button asChild className="mt-10" size="lg">
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">

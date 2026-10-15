@@ -20,10 +20,10 @@ type Post = {
 
 const posts: Post[] = [
   {
-    title: "KasiConnect launches Kota AI — demand forecasting for township fast-food restaurants",
+    title: "Nosty's Fresh Fast Food: 40% sales growth in under six months",
     excerpt:
-      "Our digital innovation unit KasiConnect has gone live with Kota AI, a Prophet-powered forecasting and reorder API now driving daily decisions at Nosty's Fresh Fast Food. Weather-aware, event-aware and built for the Kasi economy.",
-    date: "Apr 20, 2026",
+      "Our partnership enabled 40% sales growth in under six months, while Kota AI reduced waste by 20%. Delivery integrated into the app mobilised two scooters and helped create employment, including one full-time position.",
+    date: "Client case study",
     readTime: "3 min read",
     image: kasiHero,
     href: "/kasiconnect",

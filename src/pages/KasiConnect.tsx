@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { NostyResults } from "@/components/NostyResults";
 import heroImg from "@/assets/kasiconnect-hero.jpg";
 import forecastImg from "@/assets/kota-forecast.jpg";
 import {
@@ -35,7 +36,7 @@ const features = [
   {
     icon: CloudSun,
     title: "Weather-Adjusted Sales",
-    desc: "Open-Meteo forecasts translate into multiplicative impact scores — heavy rain can cut foot traffic by up to 60%.",
+    desc: "Open-Meteo forecasts translate into multiplicative impact scores — weather conditions help guide daily stock decisions.",
   },
   {
     icon: PackageCheck,
@@ -54,39 +55,32 @@ const features = [
   },
 ];
 
-const stats = [
-  { label: "Live clients", value: "Nosty's" },
-  { label: "Year 2 target", value: "15+ vendors" },
-  { label: "Break-even", value: "Month 14" },
-  { label: "Year 3 revenue", value: "Up to R2.5M" },
-];
-
-const roadmap = [
+const delivered = [
   {
-    phase: "Now",
-    title: "Live & Validated",
+    phase: "Data & AI",
+    title: "Less waste, smarter stock",
     points: [
-      "Powering Nosty's Fresh Fast Food daily forecasts",
-      "FastAPI + Supabase + Prophet stack on Render",
-      "Reduced spoilage and improved reorder accuracy",
+      "Live sales data feeds Kota AI through data pipelines",
+      "Weather and local events inform daily forecasts",
+      "Our model reduced waste at Nosty's by 20%",
     ],
   },
   {
-    phase: "6–12 months",
-    title: "Scale in the North West",
+    phase: "Software & Operations",
+    title: "A connected restaurant",
     points: [
-      "Migrate from free tier to enterprise cloud",
-      "Onboard 5–10 restaurants in Klerksdorp & surrounds",
-      "Train Sales Ambassadors for vendor onboarding",
+      "Live restaurant app at www.nosty.co.za",
+      "Delivery integrated into the app",
+      "Two delivery scooters mobilised for the restaurant",
     ],
   },
   {
-    phase: "Year 2–3",
-    title: "Catering, Retail & Automation",
+    phase: "Business & Employment",
+    title: "Impact beyond the app",
     points: [
-      "Automated reordering via supplier API integrations",
-      "Multi-restaurant dashboards and richer analytics",
-      "Optional advanced models (XGBoost, LSTMs) for complex clients",
+      "40% sales growth in under six months of our partnership",
+      "Employment created through digitization and delivery",
+      "One full-time position created",
     ],
   },
 ];
@@ -97,17 +91,17 @@ function KasiConnect() {
       <Helmet>
         { ([
           ...[
-      { title: "KasiConnect & Kota AI — Demand Forecasting for Township Restaurants" },
+      { title: "KasiConnect & Kota AI — Proven Results at Nosty's" },
       {
         name: "description",
         content:
-          "Kota AI is a demand forecasting and reorder API by KasiConnect (a unit of MOZK Solutions) — built for township fast-food vendors. Live with Nosty's Fresh Fast Food.",
+          "Kota AI reduced waste by 20% at Nosty's Fresh Fast Food. MOZK's wider partnership enabled 40% sales growth in under six months, integrated delivery and employment.",
       },
       { property: "og:title", content: "KasiConnect & Kota AI — Demand Forecasting API" },
       {
         property: "og:description",
         content:
-          "AI-powered demand forecasting, weather and event-aware reorder logic for the Kasi economy. Live API powering Nosty's Fresh Fast Food.",
+          "Proven at Nosty's: 40% sales growth in under six months, 20% less waste, two delivery scooters and one full-time position.",
       },
       { property: "og:image", content: heroImg },
       { name: "twitter:image", content: heroImg },
@@ -141,8 +135,9 @@ function KasiConnect() {
               Kota AI <span className="text-primary">— demand forecasting</span> for the Kasi economy.
             </h1>
             <p className="mt-8 text-lg md:text-xl text-foreground/80 max-w-2xl leading-relaxed">
-              A live, AI-powered forecasting and reorder API built for small-to-medium township fast-food
-              restaurants — starting in the North West province of South Africa.
+              Our proprietary model reduced waste by 20% at Nosty's Fresh Fast Food.
+              Part of a MOZK partnership that enabled 40% sales growth in under six months,
+              integrated delivery and created employment.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a
@@ -166,17 +161,7 @@ function KasiConnect() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="py-16 border-y border-border">
-        <div className="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {stats.map((s) => (
-            <div key={s.label} className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">{s.value}</div>
-              <div className="mt-2 text-xs uppercase tracking-widest text-muted-foreground">{s.label}</div>
-            </div>
-          ))}
-        </div>
-      </section>
+      <NostyResults />
 
       {/* Problem / Solution */}
       <section className="py-24">
@@ -259,15 +244,15 @@ function KasiConnect() {
         </div>
       </section>
 
-      {/* Roadmap */}
+      {/* Delivered outcomes */}
       <section className="py-24 bg-[var(--navy-deep)]">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-xs uppercase tracking-[0.3em] text-primary">Roadmap</span>
-            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-foreground">From one shop to a movement</h2>
+            <span className="text-xs uppercase tracking-[0.3em] text-primary">Delivered at Nosty's</span>
+            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-foreground">What We Have Put to Work</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            {roadmap.map((r) => (
+            {delivered.map((r) => (
               <div
                 key={r.phase}
                 className="p-8 rounded-xl bg-card border border-border hover:border-primary/50 transition-smooth"
@@ -300,12 +285,12 @@ function KasiConnect() {
             {
               icon: TrendingUp,
               title: "Higher margins",
-              desc: "Reducing spoilage and increasing inventory turnover for micro-businesses.",
+              desc: "Our model reduced waste at Nosty's Fresh Fast Food by 20%.",
             },
             {
               icon: Users,
               title: "Job creation",
-              desc: "12 direct jobs targeted in Year 1–2, and 500+ indirect SME jobs supported by Year 3.",
+              desc: "App-integrated delivery with two scooters helped create employment, including one full-time position.",
             },
           ].map((i) => (
             <div key={i.title} className="p-8 rounded-2xl bg-card border border-border shadow-elegant">
@@ -323,11 +308,11 @@ function KasiConnect() {
       <section className="py-24 bg-[var(--navy-deep)]">
         <div className="container mx-auto px-6 text-center max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Run a restaurant or fund the Kasi economy?
+            Bring proven expertise to your restaurant.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            We're onboarding new vendors and engaging with funders backing the R7M first round to scale Kota AI
-            to 15+ clients by Year 2.
+            Our work at Nosty's connects AI, sales data, software and delivery to measurable outcomes.
+            Talk to us about your business and the operational challenges that matter to you.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link
