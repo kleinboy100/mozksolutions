@@ -11,7 +11,7 @@ export function Footer() {
         <div>
           <Logo />
           <p className="mt-4 text-sm text-muted-foreground max-w-xs">
-            Proven AI, data and software for township businesses. Real results at Nosty's: 40% sales growth and 20% less waste.
+            Proven AI, data and software for township businesses. Real client results: 40% sales growth and 20% less waste.
           </p>
         </div>
         <div>

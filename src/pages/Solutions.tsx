@@ -42,7 +42,7 @@ const solutions = [
   {
     icon: Store,
     title: "Competitiveness & Job Creation",
-    desc: "Our work at Nosty's connects digitization to real economic activity: increased sales, app-integrated delivery with two scooters, and employment including one full-time position.",
+    desc: "Our client work connects digitization to real economic activity: increased sales, app-integrated delivery with two scooters, and employment including one full-time position.",
     bullets: ["Business digitization", "Integrated delivery", "Operational support", "Measurable client outcomes"],
   },
 ];
@@ -76,7 +76,7 @@ function Solutions() {
       <Header />
       <PageBanner
         title="Our Solutions"
-        subtitle="AI, data and software backed by real results: 40% sales growth and 20% less waste at Nosty's."
+        subtitle="AI, data and software backed by real results: 40% sales growth and 20% less waste for our anchor client."
       />
 
       <section className="py-20">
@@ -108,7 +108,7 @@ function Solutions() {
         <div className="container mx-auto px-6 text-center max-w-2xl">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">Proven in a real township business.</h2>
           <p className="mt-4 text-muted-foreground">
-            Nosty's grew sales by 40% in under six months of working with us. Tell us about your
+            Our anchor client grew sales by 40% in under six months of working with us. Tell us about your
             operations and let's discuss the right AI, data and software for your business.
           </p>
           <Button asChild className="mt-8" size="lg">

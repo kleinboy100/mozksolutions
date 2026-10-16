@@ -49,7 +49,7 @@ function Vision() {
               the realities of how they trade.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              At Nosty's Fresh Fast Food, our partnership enabled 40% sales growth in under six months.
+              For our anchor restaurant client, our partnership enabled 40% sales growth in under six months.
               Our model reduced waste by 20%, and app-integrated delivery mobilised two scooters
               and helped create employment, including one full-time position.
             </p>
@@ -111,7 +111,7 @@ function Vision() {
             Introducing <span className="text-primary">KasiConnect</span>
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">
-            KasiConnect is our digital innovation unit focused on the township economy. Its product, Kota AI, is live at Nosty's Fresh Fast Food, using sales data, weather and local events to guide stock decisions. The model reduced waste by 20%.
+            KasiConnect is our digital innovation unit focused on the township economy. Its product, Kota AI, is live with our anchor clients, using sales data, weather and local events to guide stock decisions. It has driven over R100,000 in revenue for anchor clients and reduced perishable waste by over 20%.
           </p>
           <Link
             to="/kasiconnect"

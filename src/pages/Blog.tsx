@@ -20,7 +20,7 @@ type Post = {
 
 const posts: Post[] = [
   {
-    title: "Nosty's Fresh Fast Food: 40% sales growth in under six months",
+    title: "Township restaurant case study: 40% sales growth in under six months",
     excerpt:
       "Our partnership enabled 40% sales growth in under six months, while Kota AI reduced waste by 20%. Delivery integrated into the app mobilised two scooters and helped create employment, including one full-time position.",
     date: "Client case study",

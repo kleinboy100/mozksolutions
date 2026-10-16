@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { NostyResults } from "@/components/NostyResults";
+import { ClientResults } from "@/components/ClientResults";
 import heroImg from "@/assets/kasiconnect-hero.jpg";
 import forecastImg from "@/assets/kota-forecast.jpg";
 import {
@@ -62,14 +62,14 @@ const delivered = [
     points: [
       "Live sales data feeds Kota AI through data pipelines",
       "Weather and local events inform daily forecasts",
-      "Our model reduced waste at Nosty's by 20%",
+      "Our model reduced perishable waste by over 20%",
     ],
   },
   {
     phase: "Software & Operations",
     title: "A connected restaurant",
     points: [
-      "Live restaurant app at www.nosty.co.za",
+      "Live online ordering app for an anchor restaurant",
       "Delivery integrated into the app",
       "Two delivery scooters mobilised for the restaurant",
     ],
@@ -91,17 +91,17 @@ function KasiConnect() {
       <Helmet>
         { ([
           ...[
-      { title: "KasiConnect & Kota AI — Proven Results at Nosty's" },
+      { title: "KasiConnect & Kota AI — Proven Results" },
       {
         name: "description",
         content:
-          "Kota AI reduced waste by 20% at Nosty's Fresh Fast Food. MOZK's wider partnership enabled 40% sales growth in under six months, integrated delivery and employment.",
+          "Kota AI reduced waste by 20% for our anchor client. MOZK's wider partnership enabled 40% sales growth in under six months, integrated delivery and employment.",
       },
       { property: "og:title", content: "KasiConnect & Kota AI — Demand Forecasting API" },
       {
         property: "og:description",
         content:
-          "Proven at Nosty's: 40% sales growth in under six months, 20% less waste, two delivery scooters and one full-time position.",
+          "Proven results: 40% sales growth in under six months, 20% less waste, two delivery scooters and one full-time position.",
       },
       { property: "og:image", content: heroImg },
       { name: "twitter:image", content: heroImg },
@@ -135,19 +135,11 @@ function KasiConnect() {
               Kota AI <span className="text-primary">— demand forecasting</span> for the Kasi economy.
             </h1>
             <p className="mt-8 text-lg md:text-xl text-foreground/80 max-w-2xl leading-relaxed">
-              Our proprietary model reduced waste by 20% at Nosty's Fresh Fast Food.
+              Our proprietary model reduced perishable waste by over 20% for our anchor client.
               Part of a MOZK partnership that enabled 40% sales growth in under six months,
               integrated delivery and created employment.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href="https://www.nosty.co.za"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-7 py-3 rounded-md bg-primary text-primary-foreground font-medium hover:shadow-glow transition-smooth"
-              >
-                See it live at Nosty's <ExternalLink className="w-4 h-4" />
-              </a>
               <a
                 href="https://restaurant-demand-forecasting-1.onrender.com/"
                 target="_blank"
@@ -161,7 +153,7 @@ function KasiConnect() {
         </div>
       </section>
 
-      <NostyResults />
+      <ClientResults />
 
       {/* Problem / Solution */}
       <section className="py-24">
@@ -248,7 +240,7 @@ function KasiConnect() {
       <section className="py-24 bg-[var(--navy-deep)]">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-xs uppercase tracking-[0.3em] text-primary">Delivered at Nosty's</span>
+            <span className="text-xs uppercase tracking-[0.3em] text-primary">Delivered for our clients</span>
             <h2 className="mt-4 text-4xl md:text-5xl font-bold text-foreground">What We Have Put to Work</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -285,7 +277,7 @@ function KasiConnect() {
             {
               icon: TrendingUp,
               title: "Higher margins",
-              desc: "Our model reduced waste at Nosty's Fresh Fast Food by 20%.",
+              desc: "Our model reduced perishable waste by over 20%.",
             },
             {
               icon: Users,
@@ -311,7 +303,7 @@ function KasiConnect() {
             Bring proven expertise to your restaurant.
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Our work at Nosty's connects AI, sales data, software and delivery to measurable outcomes.
+            Our work connects AI, sales data, software and delivery to measurable outcomes.
             Talk to us about your business and the operational challenges that matter to you.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
@@ -321,14 +313,6 @@ function KasiConnect() {
             >
               Talk to us <ArrowRight className="w-4 h-4" />
             </Link>
-            <a
-              href="https://www.nosty.co.za"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-md border border-primary/40 text-foreground hover:bg-primary/10 transition-smooth"
-            >
-              Visit Nosty's <ExternalLink className="w-4 h-4" />
-            </a>
           </div>
         </div>
       </section>
