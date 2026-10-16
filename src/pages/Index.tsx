@@ -5,7 +5,7 @@ import banner from "@/assets/page-banner.jpg";
 import kasiHero from "@/assets/kasiconnect-hero.jpg";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { NostyResults } from "@/components/NostyResults";
+import { ClientResults } from "@/components/ClientResults";
 import { Bot, Boxes, BrainCircuit, Store, Database, BarChart3, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { WHATSAPP_URL } from "@/lib/contact";
@@ -55,13 +55,13 @@ function Index() {
       {
         name: "description",
         content:
-          "MOZK Solutions digitizes township businesses with AI, software and data. At Nosty's: 40% sales growth in under six months, 20% less waste and delivery-enabled job creation.",
+          "MOZK Solutions digitizes township businesses with AI, software and data. For our anchor client: 40% sales growth in under six months, 20% less waste and delivery-enabled job creation.",
       },
       { property: "og:title", content: "MOZK Solutions — Proven Results for Township Businesses" },
       {
         property: "og:description",
         content:
-          "Real client results: 40% sales growth in under six months at Nosty's Fresh Fast Food, 20% less waste and integrated delivery.",
+          "Real client results: 40% sales growth in under six months for an anchor client, 20% less waste and integrated delivery.",
       },
     ]
         ] as Array<Record<string,string>>).map((t, i) => {
@@ -102,7 +102,7 @@ function Index() {
             </h1>
             <p className="mt-8 text-lg md:text-xl text-foreground/80 max-w-xl leading-relaxed">
               We turn data, AI models, intelligent agents and software into measurable business results.
-              At Nosty's Fresh Fast Food, our partnership enabled 40% sales growth in under six months
+              For our anchor township restaurant client, our partnership enabled 40% sales growth in under six months
               and a 20% reduction in waste.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
@@ -123,7 +123,7 @@ function Index() {
         </div>
       </section>
 
-      <NostyResults />
+      <ClientResults />
 
       {/* Transform section */}
       <section className="py-24">
@@ -145,7 +145,7 @@ function Index() {
               that data into insights, dashboards and AI-driven decisions owners can act on daily.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Our work with Nosty's shows what this looks like in practice: increased sales,
+              Our work with township restaurants shows what this looks like in practice: increased sales,
               reduced waste, app-integrated delivery with two scooters, and employment created,
               including one full-time position. We build around the business, not just the technology.
             </p>
@@ -220,7 +220,7 @@ function Index() {
               Meet <span className="text-primary">Kota AI</span> — demand forecasting for the Kasi economy.
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Our proprietary forecasting and reorder model is live at Nosty's Fresh Fast Food.
+              Our proprietary forecasting and reorder model is live in a township fast-food restaurant.
               It reduced waste by 20% as part of a wider digitization partnership that increased sales
               by 40% in under six months and brought delivery into the app.
             </p>
@@ -231,14 +231,6 @@ function Index() {
               >
                 See the client results <ArrowRight className="w-4 h-4" />
               </Link>
-              <a
-                href="https://www.nosty.co.za"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-7 py-3 rounded-md border border-primary/40 text-foreground hover:bg-primary/10 transition-smooth"
-              >
-                Visit Nosty's
-              </a>
             </div>
           </div>
         </div>
@@ -253,7 +245,7 @@ function Index() {
             Work with a Partner <span className="text-primary">with Proven Results</span>
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
-            From sales and stock data to forecasting and delivery, our work at Nosty's connects
+            From sales and stock data to forecasting and delivery, our client work connects
             technology to everyday operations. Tell us where your business needs to go next.
           </p>
           <Button asChild className="mt-10" size="lg">
