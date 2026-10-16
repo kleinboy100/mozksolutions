@@ -14,35 +14,42 @@ import { WHATSAPP_URL } from "@/lib/contact";
 
 const services = [
   {
-    icon: BrainCircuit,
-    title: "AI Models for Township SMEs",
-    desc: "Custom forecasting and decision models — like Kota AI — that help informal businesses predict demand, reduce waste and grow profitably.",
+    icon: Bot,
+    title: "AI Agents & Task Automation",
+    desc: "Our edge: autonomous AI agents that handle scheduling, admin, customer queries, reporting and data pipelines — so your people focus on high-value work.",
   },
   {
-    icon: Bot,
-    title: "Intelligent Agents",
-    desc: "AI agents that automate ordering, customer engagement and admin work, so township entrepreneurs can focus on running their business.",
+    icon: BrainCircuit,
+    title: "Predictive AI Models",
+    desc: "Demand forecasting, smart restocking and decision models that learn from your own data to cut waste and lift revenue.",
   },
   {
     icon: Boxes,
-    title: "Software & Digitization",
-    desc: "Lightweight, low-bandwidth web and mobile software that digitizes operations — from sales to stock — for fast-food shops, spazas and service SMEs.",
+    title: "Web, Mobile & Business Systems",
+    desc: "Custom web platforms, Android and iOS apps, portals and e-commerce built around how your organisation actually works.",
   },
   {
     icon: Database,
-    title: "Data Engineering & Cloud",
-    desc: "We design and manage the databases, pipelines and cloud infrastructure that power every model, agent and app we build.",
+    title: "Cloud & Data Engineering",
+    desc: "Secure cloud hosting, migration, backups, databases and pipelines — reliable infrastructure without the cost of on-site servers.",
   },
   {
     icon: BarChart3,
-    title: "Analytics & Insights",
-    desc: "Dashboards and visualizations that turn raw sales, stock and customer data into clear, actionable decisions for owners and managers.",
+    title: "Analytics & Dashboards",
+    desc: "One clear view of sales, stock, finance and operations, turning raw data into decisions management can act on.",
   },
   {
     icon: Store,
-    title: "Competitiveness & Jobs",
-    desc: "We equip Kasi businesses with the tools to compete with formal players, scale revenue and create sustainable local employment.",
+    title: "Project Delivery & SLA Support",
+    desc: "Structured ICT project delivery with clear stakeholder reporting, followed by maintenance retainers and high-availability support.",
   },
+];
+
+const difference = [
+  ["Typical IT providers build systems.", "We build systems that think — AI models and agents are built into what we deliver."],
+  ["Results are promised.", "Our results are measured: +40% client sales, over 20% less waste, R100k+ revenue driven."],
+  ["Hand-over and walk away.", "SLA retainers, cloud management and ongoing optimisation after go-live."],
+  ["Generic, one-size solutions.", "Built for South African realities — from township SMEs to corporates and the public sector."],
 ];
 
 function Index() {
