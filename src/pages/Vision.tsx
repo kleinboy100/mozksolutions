@@ -93,14 +93,90 @@ function Vision() {
       </section>
 
       <section className="py-20">
-        <div className="container mx-auto px-6 text-center max-w-3xl">
-          <span className="text-xs uppercase tracking-[0.3em] text-primary">Leadership</span>
-          <h2 className="mt-4 text-4xl font-bold text-foreground">Operators & Builders</h2>
-          <p className="mt-6 text-muted-foreground leading-relaxed">
-            Our leadership team blends AI, software and on-the-ground experience working with
-            township SMEs. We don't just ship technology — we partner with our clients to digitize
-            their operations, grow their revenue and hire from their communities.
-          </p>
+        <div className="container mx-auto px-6">
+          <div className="text-center max-w-3xl mx-auto">
+            <span className="text-xs uppercase tracking-[0.3em] text-primary">Leadership & Executive Management</span>
+            <h2 className="mt-4 text-4xl font-bold text-foreground">Operators & Builders</h2>
+          </div>
+          <div className="mt-12 grid md:grid-cols-2 gap-6">
+            {[
+              {
+                name: "Kleinboy Sebusiwa Diphoko",
+                role: "Founder & Managing Director",
+                bio: "Directs the technical vision, software deployment and enterprise growth strategy of MOZK Solutions. With a background in Mathematical Sciences, Data Analysis and Software Engineering, he leads the development of agentic AI systems and digital platforms. Under his direction MOZK launched KasiConnect, driving over R100,000 in revenue for anchor clients while reducing perishable food waste by over 20%.",
+              },
+              {
+                name: "Boitshoko Maganeloa",
+                role: "Executive Director",
+                bio: "Oversees corporate governance, strategic partnerships and enterprise operations, ensuring full statutory compliance, commercial growth and seamless service delivery across our client portfolio.",
+              },
+            ].map((p) => (
+              <div key={p.name} className="p-8 rounded-2xl bg-card border border-border shadow-elegant">
+                <div className="text-xs uppercase tracking-[0.2em] text-primary">{p.role}</div>
+                <h3 className="mt-2 text-2xl font-bold text-foreground">{p.name}</h3>
+                <p className="mt-4 text-sm text-muted-foreground leading-relaxed">{p.bio}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-[var(--navy-deep)]">
+        <div className="container mx-auto px-6">
+          <div className="text-center max-w-3xl mx-auto">
+            <span className="text-xs uppercase tracking-[0.3em] text-primary">Core competencies</span>
+            <h2 className="mt-4 text-4xl font-bold text-foreground">What We Do Best</h2>
+          </div>
+          <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              ["Software Engineering", "Full-stack web applications, cloud backend infrastructure and scalable e-commerce for enterprise and local businesses."],
+              ["Agentic AI & ML", "Predictive demand modelling, automated restocking engines and autonomous workflow agents that reduce operational waste."],
+              ["Digital Inclusion", "Technology that empowers township economic development, local food vendors and emerging MSMEs across South Africa."],
+              ["Enterprise SLA & Support", "Platform maintenance retainers, cloud infrastructure management and high-availability service agreements."],
+            ].map(([t, d]) => (
+              <div key={t} className="p-6 rounded-xl bg-card border border-border">
+                <h3 className="text-lg font-semibold text-foreground">{t}</h3>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{d}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-16 text-center max-w-3xl mx-auto">
+            <span className="text-xs uppercase tracking-[0.3em] text-primary">Enterprise work</span>
+            <h2 className="mt-4 text-3xl font-bold text-foreground">Custom Platforms We Have Delivered</h2>
+          </div>
+          <div className="mt-8 grid md:grid-cols-3 gap-6">
+            {[
+              ["Digital Media & Photography Portals", "High-volume media portals with online proofing, secure client galleries and automated invoicing."],
+              ["Legal Practice Web Platforms", "Compliant, high-performance platforms for legal firms to manage inquiries, secure documents and services."],
+              ["Autonomous Workflow AI Agents", "Agents that automate business admin, customer scheduling, analytics and data pipeline management."],
+            ].map(([t, d]) => (
+              <div key={t} className="p-6 rounded-xl bg-card border border-border">
+                <h3 className="text-lg font-semibold text-foreground">{t}</h3>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="container mx-auto px-6">
+          <div className="text-center max-w-3xl mx-auto">
+            <span className="text-xs uppercase tracking-[0.3em] text-primary">Governance, IP & compliance</span>
+            <h2 className="mt-4 text-4xl font-bold text-foreground">A Company You Can Trust</h2>
+          </div>
+          <div className="mt-12 grid md:grid-cols-3 gap-6">
+            {[
+              ["Registered & Accredited", "Registered South African private company (Reg No: 2025/960100/07), SARS tax compliant, B-BBEE Level 1 contributor — 100% Black Youth-Owned. Trademark filings in process for Class 9 and Class 42."],
+              ["Owned Intellectual Property", "All source code, branding, UI/UX designs and infrastructure are owned by MOZK SOLUTIONS (PTY) LTD under a Deed of Assignment. Clients operate under Software-as-a-Service agreements."],
+              ["POPIA & Data Security", "We adhere strictly to POPIA, with encrypted database routing, authenticated payment gateway webhooks and secure access logging."],
+            ].map(([t, d]) => (
+              <div key={t} className="p-8 rounded-2xl bg-card border border-border shadow-elegant">
+                <h3 className="text-lg font-semibold text-foreground">{t}</h3>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{d}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
