@@ -58,13 +58,13 @@ function Index() {
       <Helmet>
         { ([
           ...[
-      { title: "MOZK Solutions — Proven AI & Software for Township Businesses" },
+      { title: "MOZK Solutions — Technology, AI & Proven Business Results" },
       {
         name: "description",
         content:
-          "MOZK Solutions digitizes township businesses with AI, software and data. For our anchor client: 40% sales growth in under six months, 20% less waste and delivery-enabled job creation.",
+           "MOZK Solutions delivers AI automation, business software, cloud infrastructure and data analytics, backed by measurable client results and ongoing support.",
       },
-      { property: "og:title", content: "MOZK Solutions — Proven Results for Township Businesses" },
+      { property: "og:title", content: "MOZK Solutions — Technology, AI & Proven Business Results" },
       {
         property: "og:description",
         content:
@@ -101,16 +101,16 @@ function Index() {
         <div className="container relative mx-auto px-6 py-32">
           <div className="max-w-3xl">
             <span className="inline-block text-xs uppercase tracking-[0.3em] text-primary mb-6">
-              Proven results · AI · Data · Software
+               Technology partner · AI · Data · Software
             </span>
             <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-[1.05]">
               MOZK SOLUTIONS{" "}
-              <span className="text-primary">Built in the Kasi. Proven in business.</span>
+               <span className="text-primary">Smarter Technology. Proven Business Results.</span>
             </h1>
             <p className="mt-8 text-lg md:text-xl text-foreground/80 max-w-xl leading-relaxed">
-              We turn data, AI models, intelligent agents and software into measurable business results.
-              For our anchor township restaurant client, our partnership enabled 40% sales growth in under six months
-              and a 20% reduction in waste.
+               We help businesses and public institutions connect their systems, automate everyday tasks
+               and make better decisions. From business software and cloud infrastructure to proprietary AI
+               models and intelligent agents, we bring technology together around your operations.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -141,10 +141,9 @@ function Index() {
               More Than Software. A Business Partner.
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Township SMEs are the engine of local economies — but most operate without the digital
-              tools that formal businesses take for granted. We close that gap with AI models,
-              agents and software built specifically for the Kasi context: low-bandwidth, affordable
-              and grounded in how informal businesses actually trade.
+               Technology should work around your organisation, not the other way around. We combine
+               software engineering, data expertise and intelligent automation to connect fragmented
+               operations, reduce repetitive work and give your team the tools to compete.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
               At the heart of everything we ship is data. We build and manage the databases,
@@ -152,9 +151,10 @@ function Index() {
               that data into insights, dashboards and AI-driven decisions owners can act on daily.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Our work with township restaurants shows what this looks like in practice: increased sales,
-              reduced waste, app-integrated delivery with two scooters, and employment created,
-              including one full-time position. We build around the business, not just the technology.
+               Our roots in the township economy keep that work practical: affordable, low-bandwidth
+               systems grounded in how people actually trade. Our delivered work spans forecasting,
+               sales tracking and integrated delivery, with measurable gains in sales, waste reduction
+               and local employment.
             </p>
           </div>
           <div className="relative">
@@ -176,10 +176,10 @@ function Index() {
         <div className="container mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-xs uppercase tracking-[0.3em] text-primary">What we do</span>
-            <h2 className="mt-4 text-4xl md:text-5xl font-bold text-foreground">How We Digitize the Kasi Economy</h2>
+             <h2 className="mt-4 text-4xl md:text-5xl font-bold text-foreground">Technology That Works Across Your Business</h2>
             <p className="mt-6 text-muted-foreground">
-              From data and cloud to AI models, agents and software — purpose-built to make
-              township businesses competitive and to create local employment.
+               Business systems, cloud infrastructure, analytics and ongoing support — strengthened
+               by AI models and agents that turn insight into action.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -203,6 +203,21 @@ function Index() {
             >
               Explore all solutions <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 border-b border-border">
+        <div className="container mx-auto px-6">
+          <span className="text-xs uppercase tracking-widest text-primary">The MOZK difference</span>
+          <h2 className="mt-4 text-3xl md:text-5xl font-bold text-foreground">More Than a System Supplier</h2>
+          <div className="mt-10 grid md:grid-cols-2 gap-x-12 gap-y-8">
+            {difference.map(([expectation, approach]) => (
+              <div key={expectation} className="border-t border-border pt-6">
+                <p className="text-sm text-muted-foreground">{expectation}</p>
+                <p className="mt-3 text-lg text-foreground leading-relaxed">{approach}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

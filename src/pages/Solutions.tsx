@@ -11,39 +11,39 @@ import { BrainCircuit, Bot, Boxes, Store, Database, BarChart3, Check } from "luc
 const solutions = [
   {
     icon: BrainCircuit,
-    title: "AI Models for Township SMEs",
-    desc: "We build proprietary forecasting and decision models — like Kota AI — that learn how informal businesses actually trade and turn that into a competitive edge.",
+    title: "Predictive AI & Decision Models",
+    desc: "We build proprietary forecasting and decision models — including Kota AI — that turn operational data into practical recommendations for demand, stock and resource planning.",
     bullets: ["Demand forecasting", "Reorder & stock logic", "Event & weather-aware models", "Continuous retraining"],
   },
   {
     icon: Bot,
-    title: "Intelligent Agents",
-    desc: "AI agents that take repetitive admin off the entrepreneur's plate — from automated supplier ordering to customer engagement and reporting.",
+    title: "AI Agents & Task Automation",
+    desc: "We connect intelligent agents to business workflows to reduce repetitive administration, coordinate routine tasks and support customer engagement and reporting.",
     bullets: ["Auto-reorder agents", "WhatsApp/chat agents", "Sales & ops assistants", "Workflow automation"],
   },
   {
     icon: Boxes,
-    title: "Software & Digitization",
-    desc: "Lightweight, low-bandwidth web and mobile software that digitizes operations for spazas, fast-food shops and service SMEs in the township.",
-    bullets: ["Web & mobile apps", "POS & sales tracking", "Inventory dashboards", "Supplier integrations"],
+    title: "Web, Mobile & Business Systems",
+    desc: "Custom applications built around how your organisation operates, from customer-facing platforms to internal systems. Our township experience keeps usability, affordability and low-bandwidth access central.",
+    bullets: ["Web, Android & iOS apps", "Business portals & e-commerce", "POS & inventory systems", "Supplier integrations"],
   },
   {
     icon: Database,
     title: "Data Engineering & Cloud",
-    desc: "We build and manage the databases, pipelines and cloud infrastructure that power our AI models, agents and apps — affordable, reliable and ready to scale.",
-    bullets: ["Database design", "Data pipelines", "Cloud hosting", "API integrations"],
+    desc: "We connect, organise and secure the data behind your operations. Databases, pipelines and managed cloud infrastructure provide a reliable foundation for your applications, analytics and AI.",
+    bullets: ["Database design & migration", "Data pipelines & API integrations", "Cloud hosting & management", "Backups & operational continuity"],
   },
   {
     icon: BarChart3,
     title: "Analytics & Insights",
-    desc: "We turn raw sales, stock and customer data into dashboards and visualizations that help owners and managers make confident, informed decisions.",
-    bullets: ["Interactive dashboards", "Sales & stock reporting", "Customer insights", "KPI tracking"],
+    desc: "A clear view of sales, stock, finance and operations. We transform raw data into reporting and dashboards that help owners, managers and teams make informed decisions.",
+    bullets: ["Interactive dashboards", "Sales, stock & operations reporting", "Customer insights", "KPI tracking"],
   },
   {
     icon: Store,
-    title: "Competitiveness & Job Creation",
-    desc: "Our client work connects digitization to real economic activity: increased sales, app-integrated delivery with two scooters, and employment including one full-time position.",
-    bullets: ["Business digitization", "Integrated delivery", "Operational support", "Measurable client outcomes"],
+    title: "Project Delivery & SLA Support",
+    desc: "A technology partner beyond launch. We bring structured project delivery, stakeholder communication and ongoing maintenance together to keep your systems aligned with your business.",
+    bullets: ["ICT project delivery", "Stakeholder reporting", "Maintenance & SLA retainers", "Ongoing system optimisation"],
   },
 ];
 
@@ -57,12 +57,12 @@ function Solutions() {
       {
         name: "description",
         content:
-          "AI models, intelligent agents and software solutions that digitize township businesses, make them competitive and create local employment.",
+           "AI automation, custom business systems, cloud and data engineering, analytics and SLA support for businesses and public institutions, backed by proven client results.",
       },
       { property: "og:title", content: "Solutions — MOZK Solutions" },
       {
         property: "og:description",
-        content: "Custom AI, agents and software built for the Kasi economy.",
+         content: "Business technology, cloud, data and support — with proprietary AI and intelligent automation as our edge.",
       },
     ]
         ] as Array<Record<string,string>>).map((t, i) => {
@@ -76,7 +76,7 @@ function Solutions() {
       <Header />
       <PageBanner
         title="Our Solutions"
-        subtitle="AI, data and software backed by real results: 40% sales growth and 20% less waste for our anchor client."
+        subtitle="Connected business systems, reliable infrastructure and intelligent automation — built around your operations."
       />
 
       <section className="py-20">
@@ -106,10 +106,12 @@ function Solutions() {
 
       <section className="py-20 bg-[var(--navy-deep)]">
         <div className="container mx-auto px-6 text-center max-w-2xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Proven in a real township business.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">Capability Backed by Delivered Results</h2>
           <p className="mt-4 text-muted-foreground">
-            Our anchor client grew sales by 40% in under six months of working with us. Tell us about your
-            operations and let's discuss the right AI, data and software for your business.
+            Our anchor township client grew sales by 40% in under six months, while our model reduced
+            perishable waste by over 20%. Integrated delivery supported two scooters and employment,
+            including one full-time position. Tell us about your operations — let's discuss where
+            software, data and automation can make the difference.
           </p>
           <Button asChild className="mt-8" size="lg">
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">Let's Chat</a>
