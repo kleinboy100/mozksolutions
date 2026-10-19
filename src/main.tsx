@@ -13,12 +13,16 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import { WhatsAppChat } from "./components/WhatsAppChat";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+const rootElement = document.getElementById("root");
+if (!rootElement) throw new Error("The application root is missing.");
+
+ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <HelmetProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/index" element={<Index />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/kasiconnect" element={<KasiConnect />} />
           <Route path="/vision" element={<Vision />} />
