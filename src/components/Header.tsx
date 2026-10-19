@@ -8,6 +8,7 @@ import { WHATSAPP_URL } from "@/lib/contact";
 const links = [
   { to: "/", label: "Home", end: true },
   { to: "/solutions", label: "Solutions" },
+  { to: "/portfolio", label: "Portfolio" },
   { to: "/kasiconnect", label: "KasiConnect" },
   { to: "/vision", label: "Vision" },
   { to: "/blog", label: "Blog" },

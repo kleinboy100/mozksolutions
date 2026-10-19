@@ -6,6 +6,7 @@ import "./styles.css";
 
 import Index from "./pages/Index";
 import Solutions from "./pages/Solutions";
+import Portfolio from "./pages/Portfolio";
 import KasiConnect from "./pages/KasiConnect";
 import Vision from "./pages/Vision";
 import Blog from "./pages/Blog";
@@ -24,6 +25,7 @@ ReactDOM.createRoot(rootElement).render(
           <Route path="/" element={<Index />} />
           <Route path="/index" element={<Index />} />
           <Route path="/solutions" element={<Solutions />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/kasiconnect" element={<KasiConnect />} />
           <Route path="/vision" element={<Vision />} />
           <Route path="/blog" element={<Blog />} />
